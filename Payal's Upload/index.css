@@ -309,7 +309,7 @@ button:hover{
             padding: 2rem 11.9rem; 
             align-items: center;
             & label{
-                padding-right: ;
+                /* padding-right: ; */
                 font-size: 1.5rem;
                 font-family: "Kanit";
             }

@@ -80,40 +80,40 @@ body::-webkit-scrollbar-thumb{
   /*------- navbar start here-------- */
    
 header {
-    position: relative;
-}
-
-.nav-container {
+  position: relative; 
+  .nav-container {
     position: fixed;
+    top: 0;
     background-color: #1f1f1f;
     z-index: 9;
     padding:1rem 4rem;
+    
     /* box-shadow: rgb(108 108 108 / 40%) 0px 2px 4px, rgb(55 55 55 / 30%) 0px 7px 13px -3px, rgb(67 67 67 / 20%) 0px -3px 0px ; */
-
+    
     /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
     
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     align-items: center;
     justify-content: space-between;
-      
+    
     & .nav-logo {
-        cursor: pointer;
+      cursor: pointer;
         color: aliceblue;
         & span {
-            font-family: "Karantina", system-ui;
-            font-weight: 400;
-            font-size: 4rem;
+          font-family: "Karantina", system-ui;
+          font-weight: 400;
+          font-size: 4rem;
         }
         & .for {
-            font-family: "Kaushan Script", cursive;
-            font-weight: 400;
+          font-family: "Kaushan Script", cursive;
+          font-weight: 400;
         }
-    }
-    
-    & .navbar-search {
-      display: flex;
-      justify-content: space-evenly;
-      width: 33rem;
+      }
+      
+      & .navbar-search {
+        display: flex;
+        justify-content: space-evenly;
+        width: 33rem;
       height: 5rem;
       
       & .nav-input {
@@ -138,7 +138,7 @@ header {
         background-color: #d1d1d1;
       } 
     }
-
+    
     & .navbar-list {
       gap: 7rem;
       list-style: none;
@@ -149,32 +149,32 @@ header {
         font-weight: 500;
         color: #ffffff;
         transition: all 0.3s;
-
+        
       }
       & a {
         padding: 0.5rem 1rem;
         
       }
-
+      
       & .topics-section {
-          gap: 1rem;
+        gap: 1rem;
+        align-items: center;
+        position: relative; /* specific reason */
+        & .topics-btn{
           align-items: center;
-          position: relative; /* specific reason */
-          & .topics-btn{
-              align-items: center;
               justify-content: center;
               & button {
                   background: transparent;
                   border: none;
                   & .nav-dropdown{
-                      padding-top: 2px;
-                      color: #fff;
+                    padding-top: 2px;
+                    color: #fff;
                   }
+                }
               }
-          }
-          
-          & .topics-content {
-              /* opacity: 0; */
+              
+              & .topics-content {
+                /* opacity: 0; */
               width: 39.5rem;
               height: auto;
               background: #1f1f1f;
@@ -188,34 +188,35 @@ header {
               /* box-shadow: rgb(38, 57, 77) 1px 3px 15px 0px; */
               
               & .topics-list {
-                  flex-wrap: wrap;
-                  gap: 2rem;
+                flex-wrap: wrap;
+                gap: 2rem;
                   align-items: center;
                   justify-content: center;
                   padding: 2rem 1rem;
                   list-style: none;
                   & .DSA-topic--heading {
-                      text-decoration: none;
-                      color: #ada9ab;
-                      transition: all 0.2s linear;
-                      text-transform: capitalize;
-                      font-size: 1.4rem;
+                    text-decoration: none;
+                    color: #ada9ab;
+                    transition: all 0.2s linear;
+                    text-transform: capitalize;
+                    font-size: 1.4rem;
                   }
                   & :hover {
-                      color: #555454;
+                    color: #555454;
                   }
-              }
+                }
           }
 
       }
-
+      
       & .navbar-link:hover {
         color: #ada9ab;
       }
-
+      
     } 
     
-}   
+  }   
+}
   
 /*------- navbar section end here-------- */
   
@@ -224,6 +225,7 @@ header {
     
 /* hero section css start here */
 .hero-main--section {
+    margin-top: 8rem;
     gap: 3rem;
     padding-top: 7rem;
     & img {
