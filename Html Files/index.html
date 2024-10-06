@@ -51,8 +51,10 @@
         </div>
 
         <ul class="navbar-list flex">
-          <li class="drop-one"><a class="navbar-link" href="../Html Files/index.html">Home</a></li>
-          <li class="drop-one topics-section">
+          
+          <li class="drop-one flex"><a class="navbar-link" href="../Html Files/index.html">Home</a></li>
+
+          <li class="drop-one flex topics-section">
             <div class="topics-btn flex">
               <a class="navbar-link" href="">Topics</a>
               <button>
@@ -86,12 +88,34 @@
               </ul>
             </div>
           </li>
-          <li class="drop-one" i>
+
+          <li class="drop-one flex" i>
             <a class="navbar-link" href="../Html Files/articls.html">Articles</a>
           </li>
-          <li class="drop-one" i>
-            <a class="navbar-link" href="#">Contact Us</a>
+
+          <li class="drop-one flex login" i>
+            <a class="navbar-link flex" href="#">Login</a>
           </li>
+          
+          <li class="drop-one flex signUp" i>
+            <figure class="profile">
+              <img src="../Images+Icons/user.svg" alt="" class="navbar-link flex">
+              <!-- <img src="../Images+Icons/dropdown.svg" alt=""> -->
+              
+              <div class="profile-section flex">
+                <div class="user flex">
+                  <i class="fa-solid fa-user"></i>
+                  <p class="view-profile">View Profile</p>
+                </div>
+                <div class="user flex">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>
+                  <p class="view-profile">Logout</p>
+                </div>
+                
+              </div>
+            </figure>
+          </li>
+        
         </ul>
       </section>
     </header>
@@ -114,19 +138,19 @@
     <!------------main section end----->
 
 
-  <!--section heading animation part start here--->
-  <section class="container header-overflow">
-    <div class="page">
-      <div class="loop">
-          <h1><b> Transform</b> <span> your </span><b>coding</b> <span>Skils </span> with<span> StepForSuccess*. </span></h1>
-          <h1><b> Transform</b> <span> your </span> <b>coding</b> <span>Skills</span> With<span> StepForsuccess*. </span></h1>
-          <h1><b> Transform</b> <span> your </span> <b>coding</b> <span>Skills</span> With<span> StepForsuccess*. </span></h1>
+    <!--section heading animation part start here--->
+    <section class="container header-overflow">
+      <div class="page">
+        <div class="loop">
+            <h1><b> Transform</b> <span> your </span><b>coding</b> <span>Skils </span> with<span> StepForSuccess*. </span></h1>
+            <h1><b> Transform</b> <span> your </span> <b>coding</b> <span>Skills</span> With<span> StepForsuccess*. </span></h1>
+            <h1><b> Transform</b> <span> your </span> <b>coding</b> <span>Skills</span> With<span> StepForsuccess*. </span></h1>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!---section heading animation part end here->
-  
+    <!---section heading animation part end here->
+    
     <!-- Section image animation part start -->
       <section class="section-image--animation">
         <div class="container flex">
@@ -225,6 +249,8 @@
     </section>
     <!-- section 4 end here -->
 
+
+    
     <footer>
       <section class="section-footer container">
         <div class="grid grid-two--rows footer-all--content">
@@ -294,5 +320,6 @@
     </footer>
 
     <script src="../JS file/article.js"></script>
+    <script src="../JS file/index.js"></script>
   </body>
 </html>
