@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .dropdown {
+            cursor: pointer;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: fit-content;
+        }
+        .code-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            font-family: monospace;
+        }
+    </style>
+    <title>Code Snippet with Dropdown</title>
+</head>
+<body>
+
+<h2>Brute Force Approach</h2>
+<div class="dropdown" onclick="toggleCode()">Click here to see the Brute Force Approach</div>
+<div id="codeContent" class="code-content">
+    <pre>
+<code>
+// Example: Find the sum of all elements in an array
+int sum = 0;
+for (int i = 0; i < n; i++) {
+    sum += arr[i];
+}
+    </code>
+    </pre>
+</div>
+
+<script>
+    function toggleCode() {
+        var content = document.getElementById("codeContent");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

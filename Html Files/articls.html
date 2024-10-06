@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <title>Home</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&family=Kaushan+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin"
+        />
+    
+        <link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css" />
+        <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css" />
+        <link rel="icon" href="media/img/logo-gbu.png" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+        />
+    
+        <link rel="stylesheet" href="/Payal's Project/CSS file/articls.css">
+        <link rel="stylesheet" href="/Payal's Project/CSS file/index.css" />
+    
+    </head>
+<body>
+    
+    <!---------navbar two start--------->
+    <header>
+        <section class="container nav-container flex">
+          <p class="nav-logo">
+            <span>Step</span><span class="for">For</span><span>Success</span>
+          </p>
+  
+          <div class="navbar-search">
+            <input type="text" class="nav-input" placeholder="Search anything" />
+            <button class="nav-botton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+  
+          <ul class="navbar-list flex">
+            <li class="drop-one"><a class="navbar-link" href="#">Home</a></li>
+            <li class="drop-one topics-section">
+              <div class="topics-btn flex">
+                <a class="navbar-link" href="#">Topics</a>
+                <button>
+                  <img src="/Payal's Project/Images+Icons/dropdown.svg" alt="" class="nav-dropdown" />
+                </button>
+              </div>
+              <div class="topics-content">
+                <ul class="topics-list flex">
+                  <li><a href="" class="DSA-topic--heading">Array</a></li>
+                  <li><a href="" class="DSA-topic--heading">String</a></li>
+                  <li><a href="" class="DSA-topic--heading">Linked list</a></li>
+                  <li><a href="" class="DSA-topic--heading">Stack</a></li>
+                  <li><a href="" class="DSA-topic--heading">Queue</a></li>
+                  <li><a href="" class="DSA-topic--heading">recursion</a></li>
+                  <li><a href="" class="DSA-topic--heading">searching</a></li>
+                  <li><a href="" class="DSA-topic--heading">sorting</a></li>
+                  <li><a href="" class="DSA-topic--heading">heap</a></li>
+                  <li><a href="" class="DSA-topic--heading">graph</a></li>
+                  <li><a href="" class="DSA-topic--heading">backtracking</a></li>
+                  <li>
+                    <a href="" class="DSA-topic--heading">greedy algorithm</a>
+                  </li>
+                  <li><a href="" class="DSA-topic--heading">trie</a></li>
+                  <li><a href="" class="DSA-topic--heading">STL</a></li>
+                  <li>
+                    <a href="" class="DSA-topic--heading">dynamic programming</a>
+                  </li>
+                  <li>
+                    <a href="" class="DSA-topic--heading">bit manipulation</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="drop-one" i>
+              <a class="navbar-link" href="#">Articles</a>
+            </li>
+            <li class="drop-one" i>
+              <a class="navbar-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </section>
+    </header>
+    <!-----navbar two end------->
+
+
+    <!-- article section start here  -->
+     <section class="article-section container">
+        <h1 class="article-heading--ques">The Two Sum problem asks us to determine whether there are two distinct numbers in an array that add up to a given target sum.</h1>
+
+        <div class="problem-statement">
+            <h2 class="problem-heading">Problem Statement:</h2>
+            <div class="left-padding">
+                <p class="problem-head--para">You are given:</p>
+                <ul class="problem-points">
+                    <li>An array of integers.</li>
+                    <li>A target sum.</li>
+                </ul>
+            </div>
+            <p class="problem-asks">You need to check if there are two distinct numbers in the array that, when added together. equal the target sum.</p>
+
+
+            <h2 class="problem-heading example">Example: </h2>
+            <div class="left-padding">
+                <ul class="problem-points">
+                    <li>An array of integers.</li>
+                    <li>A target sum.</li>
+                </ul>
+            </div>
+            <p class="problem-asks">In this case, the numbers 2 and 7 add upto 9, so that the function sould return true..</p>
+        </div>
+
+        <ul class="all-approach flex">
+          <li class="approach approach1 flex">
+
+            <div class="approach-head--content flex">
+                <h3 class="approach-heading">Brute Force Approach</h3>
+                
+                <div class="icon-to-display flex">
+                  <img src="/Payal's Project/Images+Icons/plus-Icon.svg" alt="" class="plus-icon">
+                  <img src="/Payal's Project/Images+Icons/cross-icon2.svg" alt="" class="cross-icon">
+                </div>
+                
+            </div>
+
+            <div class="approach-content">
+                <h3 class="brute-force--heading">Brute Force Approach (Step-By-Step): </h3>
+                <p class="brute-force--para">The brute force approach is the simplest way to solve this problem. It involves checking all pair of numbers in the array and seeing if their sum equals the target.</p>
+                <h3 class="brute-force--example">Visualization with Example: </h3>
+                <p class="brute-force--para">Let's take the array: <span>[2,7,11,15]</span> and the target 9.</p>
+                <p class="brute-force--para">We will try every possible combination of two numbers and check if they sum up to 9.</p>
+                <p class="brute-force--para"><span>Step 1: </span> Start with the first number:</p>
+                <ul>
+                  <li>Pair 2 with 7: Sum = 2 = 7 = 9. This is the target! We found the pair.</li>
+                  <li>Since we already found the pair, We can stop here and return true.</li>
+                </ul>
+                <p class="brute-force--para">If we'll Continue.</p>
+                <p class="brute-force--para"><span>Step 2: </span> Pair 2 with 11: Sum = 2 + 11 = 13. <span>No match</span></p>
+                <p class="brute-force--para"><span>Step 3: </span> Pair 2 with 15: Sum = 2 + 15 = 17. <span>No match</span></p>
+                <p class="brute-force--para">Now move to the second number:</p>
+                <p class="brute-force--para"><span>Step 4: </span> Pair 7 with 11: Sum = 7 + 11 = 18. No match.</p>
+                <p class="brute-force--para"><span>Step 5: </span> Pair 7 with 11: Sum = 7 + 11 = 18. No match.</p>
+
+                <p class="brute-force--para"><span>Step 6: </span> Pair 11 with 15: Sum = 11 + 15 = 26. No match.</p>
+                <p class="brute-force--para">Since we already found a pair (2 + 7), we can return true.</p>
+
+
+                <h3 class="code-part"><img src="" alt="Code part Image Insert"></h3>
+
+                <h3 class="code-explanation">Explanation of the Code:</h3>
+                
+                <ol>
+                  <li>
+                    <p>Nested Loop: </p>
+                    <ul>
+                      <li>The outer loop iterates over the array using the variable i.</li>
+                      <li>The inner loop checks all elements after i (i.e., j = i + 1) to avoid duplicate pairs.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>Nested Loop: </p>
+                    <ul>
+                      <li>The outer loop iterates over the array using the variable i.</li>
+                      <li>The inner loop checks all elements after i (i.e., j = i + 1) to avoid duplicate pairs.</li>
+                    </ul>
+                  </li>
+                </ol>
+            </div>
+          </li>
+
+
+          <li class="approach approach1 flex">
+
+            <div class="approach-head--content flex" >
+                <h3 class="approach-heading">Brute Force Approach</h3>
+                
+                <div class="icon-to-display flex">
+                  <img src="/Payal's Project/Images+Icons/plus-Icon.svg" alt="" class="plus-icon">
+                  <img src="/Payal's Project/Images+Icons/cross-icon2.svg" alt="" class="cross-icon">
+                </div>
+                
+            </div>
+
+            <div class="approach-content" >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo similique veritatis perferendis suscipit hic iusto modi nobis quidem tempore assumenda!</p>
+            </div>
+          </li>
+
+        </ul>
+     </section>
+ 
+    <!-- article section end here  -->
+
+
+
+    <script src="/Payal's Project/JS file/article.js"></script>
+</body>
+</html>
