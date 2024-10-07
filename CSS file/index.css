@@ -95,17 +95,8 @@ header {
     
     & .nav-logo {
       cursor: pointer;
-        color: aliceblue;
-        & span {
-          font-family: "Karantina", system-ui;
-          font-weight: 400;
-          font-size: 4rem;
-        }
-        & .for {
-          font-family: "Kaushan Script", cursive;
-          font-weight: 400;
-        }
-      }
+      width: 19rem;    
+    }
       
       & .navbar-search {
         display: flex;
@@ -217,7 +208,8 @@ header {
       }
       
       & .navbar-link:hover {
-        color: #ada9ab;
+        /* color: #ada9ab; */
+        color: #997bf8;
       }
       
       & .login {
@@ -234,7 +226,9 @@ header {
 
         &:hover {
           background-color: #3b3b82;
-          color: white;
+          & a {
+            color: white;
+          }
         }
       }
       & .signUp figure {
@@ -277,6 +271,20 @@ header {
             }
             & p {
               font-size: 1.4rem;
+            }
+
+            /* Hover effect of profile icons */
+            &:nth-child(1) {
+              transition: all 0.1s linear;
+              &:hover {
+                color: #3b3b82;
+              }
+            }
+            &:nth-child(2) {
+              transition: all 0.1s linear;
+              &:hover {
+                color: #932818;
+              }
             }
           }
 
@@ -769,6 +777,7 @@ footer {
           
           & .nav-logo {
             cursor: pointer;
+            font-weight: 400;
             color: aliceblue;
             & span {
                 font-family: "Karantina", system-ui;
@@ -777,7 +786,6 @@ footer {
             }
             & .for {
                 font-family: "Kaushan Script", cursive;
-                font-weight: 400;
             }
           }
           & img {
