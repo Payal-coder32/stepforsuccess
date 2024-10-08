@@ -63,6 +63,9 @@ body::-webkit-scrollbar-thumb{
     grid-template-columns: repeat(2, 1fr);
   }
   
+  .grid-four--cols {
+    grid-template-columns: 1.9fr repeat(3, 1fr);
+  }
   /* Layout end here */
   
   
@@ -891,10 +894,8 @@ header {
   }
 }*/
 
-footer {
+/* footer {
   background-color: #5272ef;
-/* background: linear-gradient(#e489ae, #4e7cd2,#c94c7e );*/
- /*background: linear-gradient(rgb(0, 0, 0), rgb(88, 23, 43), rgb(13, 13, 13));*/
   
   margin-top: 17rem;
   position: relative;
@@ -926,7 +927,6 @@ footer {
         text-align: center;
         font-weight: 700;
         color: #ffffff;
-       /* font-family: "karantina", system-ui;*/
 
       }
       & .topics{
@@ -974,8 +974,75 @@ footer {
    }
   }
 }
-}
+} */
 /* footer section end here */
+
+
+
+footer .footer-logo--para , .quick-links, .useful-notes , .contact-us {
+  flex-direction: column;
+}
+
+footer .section-footer {
+  background-color: #202329;
+  padding-bottom: 1rem;
+  & .copyright {
+    text-align: center;
+    color: #84909D;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  
+  & .section-footer--part {
+    gap: 1rem;
+    padding: 6rem 10rem 2rem;
+    margin-top: 9rem;
+    
+    & .footer-logo--para {
+      align-items: center;
+      justify-content: start;
+      
+      & img {
+        width: 19rem;
+      }
+      & p {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+    
+    & .footer-links {
+      list-style: none;
+      gap: 0.4rem;
+      
+      & p {
+        font-weight: 600;
+        padding-bottom: 0.4rem;
+      }
+      
+      & li {
+        color: #B1BDC8;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        
+        &:hover {
+          color: #9d9dd1;
+        }
+      }
+      
+    }
+    
+    & .contact-us {
+      & .gmail {
+        color: #B1BDC8;
+        cursor: pointer;
+      }
+    }
+    
+  }
+}
 
 
 
