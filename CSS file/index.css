@@ -730,7 +730,7 @@ header {
 
 
 /* footer section start here */
-footer {
+/*footer {
   background-color: #000000;
   margin-top: 17rem;
   position: relative;
@@ -749,7 +749,7 @@ footer {
         
         & h3 {
           /* color: black; */
-          font-weight: 700;
+         /* font-weight: 700;
         }
         & .start-now--btn {
           padding: 0.8rem 1.7rem;
@@ -868,31 +868,117 @@ footer {
                 align-items: center;
                 justify-content: center;
               } */
-              & .linkedin {
+            /*  & .linkedin {
                 cursor: pointer;
                 width: 6rem;
                 height: 5rem;
                 border-radius: 50%;
                 /* padding: 1rem; */
-              }
+            /*  }
               & .twitter {
                 cursor: pointer;
                 width: 6rem;
                 height: 3rem;
                 /* aspect-ratio: 1; */
-                background-color: transparent;
+               /* background-color: transparent;
                 border-radius: 50%;
                 /* padding: 1rem; */
-              }
+             /* }
             }
           }
         }
       }
   }
+}*/
+
+footer {
+  background-color: #5272ef;
+/* background: linear-gradient(#e489ae, #4e7cd2,#c94c7e );*/
+ /*background: linear-gradient(rgb(0, 0, 0), rgb(88, 23, 43), rgb(13, 13, 13));*/
+  
+  margin-top: 17rem;
+  position: relative;
+  & .container{
+ 
+  width: 100%;
+  & .start-now{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    
+    & .nav-logo {
+      cursor: pointer;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        & span {
+          font-family: "Karantina", system-ui;
+          font-weight: 400;
+          font-size: 4rem;
+        }
+        & .for {
+          font-family: "Kaushan Script", cursive;
+          font-weight: 400;
+        }
+      }
+      & h3{
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 700;
+        color: #ffffff;
+       /* font-family: "karantina", system-ui;*/
+
+      }
+      & .topics{
+          padding: 1rem;
+          text-align: center;
+          & h2{
+            font-weight: 600;
+          }
+          & a{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #ffffff;
+          }
+          & .content{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            color: #ffffff;
+
+          }
+       }
+       & .logo {
+         
+         padding-top:2rem ;
+         display: flex;
+         gap: 1rem;
+         align-items: center;
+         justify-content: center;
+         
+         & h2{
+           text-align: center;
+           padding: 1rem;
+       }
+      
+    }
+    & .copyrights{
+      text-align: center;
+      padding: 2rem;
+      color: #000000;
+      font-size: 1.5rem;
+   }
+  }
 }
-
-
+}
 /* footer section end here */
+
+
+
 
 
 
