@@ -775,7 +775,8 @@ footer .footer-logo--para , .quick-links, .useful-notes , .contact-us {
 
 footer .section-footer {
   background-color: var(--footer-bg-color);
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
+  
   & .copyright {
     text-align: center;
     color: var(--footer-copyright-color);
@@ -785,7 +786,7 @@ footer .section-footer {
   
   & .section-footer--part {
     gap: 1rem;
-    padding: 6rem 10rem 2rem;
+    padding: 19rem 10rem 5rem;
     margin-top: 9rem;
     
     & .footer-logo--para {
