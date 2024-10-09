@@ -401,7 +401,7 @@ header {
         background-color: var(--btn-color);
         color: var(--text-color);
         transition: all 0.1s linear;
-        
+
         &:hover {
           background-color: var(--btn-hover-color);
         }
@@ -801,17 +801,20 @@ footer .section-footer {
     & .footer-links {
       list-style: none;
       gap: 0.4rem;
+      padding: 0;
       
       & p {
         font-weight: 600;
         padding-bottom: 0.4rem;
       }
       
-      & li {
+      & li a {
         color: var(--footer-link-color);
         font-size: 1.5rem;
         cursor: pointer;
+        text-decoration: none;
         transition: all 0.2s linear;
+        
         
         &:hover {
           color: var(--footer-hover-color);
@@ -819,11 +822,38 @@ footer .section-footer {
       }
       
     }
+
+    & .notes-section {
+      & p {
+        padding-bottom: 0.8rem;
+      }
+
+      & .useful-notes {
+        width: 60%;
+        height: 15.5rem;
+        overflow-x: auto;
+      }
+    }
     
     & .contact-us {
-      & .gmail {
-        color: var(--footer-link-color);
-        cursor: pointer;
+
+      & .contact-gmail {
+        gap: 0.75rem;
+        & .gmail {
+          text-decoration: none;
+          color: var(--footer-link-color);
+          cursor: pointer;
+        }
+      }
+
+      & .contact-links {
+        gap: 1rem;
+        padding-top: 0.3rem;
+
+        & img {
+          width: 2rem;
+          cursor: pointer;
+        }
       }
     }
     
