@@ -18,7 +18,7 @@
   
   body {
     height: 100vh;
-    background-color: #000;
+    background-color: var(--bg-color);
     /* background:linear-gradient(127deg, rgb(34, 34, 34), rgb(68, 68, 68), rgb(143, 143, 143)); */
   }
   
@@ -35,7 +35,7 @@
   h3,
   li {
       font-size: 1.8rem;
-      color: white;
+      color: var(--text-color);
       margin: 0;
   }
   
@@ -50,7 +50,31 @@ body::-webkit-scrollbar-thumb{
   /* Base Rule end */
   
   
-  
+/*! **** theme START HERE *******/
+:root {
+  --text-color: #fff;
+  --bg-color: #000000;
+  --navbar-bg-color: #0f0f0f;
+  --searchIcon-bg-color: #d1d1d1;
+  --topic-link-color: #ada9ab;
+  --topic-link--hover-color: #555454;
+  --btn-color: #7171fe;
+  --btn-hover-color: #3c4896;
+  --navlink-hover-color: #8a8af8;
+  --userprofile-bg-color:#d8d8d8;
+  --userprofile-supporting-color: #1f1f1f;
+  --hover-logout-color: #932818;
+  --hero-heading-color: #dee3ef;
+  --footer-bg-color: #202329;
+  --footer-link-color:#B1BDC8;
+  --footer-hover-color: #9d9dd1;
+  --footer-copyright-color:#84909D;
+}
+/*! **** theme End HERE *******/
+
+
+
+
   
   /* Layout start here */
   .flex{
@@ -88,10 +112,10 @@ header {
   .nav-container {
     position: fixed;
     top: 0;
-    background-color: #0f0f0f;
+    background-color: var(--navbar-bg-color);
     z-index: 9;
     padding:1rem 10rem;
-    box-shadow: rgba(102, 116, 204, 0.25) 0px 4px 10px;
+    box-shadow: #6674cc40 0px 4px 10px;
     
     align-items: center;
     justify-content: space-between;
@@ -126,7 +150,7 @@ header {
         border-bottom-right-radius: 5rem;
         border: none;
         font-size: 2.3rem;
-        background-color: #d1d1d1;
+        background-color: var(--searchIcon-bg-color);
       } 
     }
     
@@ -144,7 +168,7 @@ header {
         display: inline-block;
         text-decoration: none;
         font-weight: 500;
-        color: #ffffff;
+        color: var(--text-color);
         transition: all 0.3s;
         
         
@@ -169,7 +193,7 @@ header {
                   border: none;
                   & .nav-dropdown{
                     padding-top: 2px;
-                    color: #fff;
+                    color: var(--text-color);
                   }
                 }
               }
@@ -197,13 +221,13 @@ header {
                   list-style: none;
                   & .DSA-topic--heading {
                     text-decoration: none;
-                    color: #ada9ab;
+                    color: var(--topic-link-color);
                     transition: all 0.2s linear;
                     text-transform: capitalize;
                     font-size: 1.4rem;
                   }
                   & :hover {
-                    color: #555454;
+                    color: var(--topic-link--hover-color);
                   }
                 }
           }
@@ -212,11 +236,11 @@ header {
       
       & .navbar-link:hover {
         /* color: #ada9ab; */
-        color: #997bf8;
+        color: var(--navlink-hover-color);
       }
       
       & .login {
-        background-color: #7171fe;
+        background-color: var(--btn-color);
         border-radius: 3rem;
         transition: all 0.15s linear;
         align-items: center;
@@ -228,13 +252,13 @@ header {
         /* display: none; */
 
         &:hover {
-          background-color: #3b3b82;
+          background-color: var(--btn-hover-color);
           & a {
-            color: white;
+            color: var(--text-color);
           }
         }
       }
-      & .signUp figure {
+      & .user-profile figure {
         position: relative;
         margin: 0;
 
@@ -242,7 +266,7 @@ header {
 
           padding: 1rem;
           border-radius: 50%;
-          background-color: #d8d8d8;
+          background-color: var(--userprofile-bg-color);
           cursor: pointer;
           filter: invert(1);
         }
@@ -258,7 +282,7 @@ header {
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          background-color: #1f1f1f;
+          background-color: var(--userprofile-supporting-color);
           border-radius: 1rem;
           box-shadow: rgba(102, 116, 204, 0.25) 0px 4px 10px;
 
@@ -280,13 +304,13 @@ header {
             &:nth-child(1) {
               transition: all 0.1s linear;
               &:hover {
-                color: #3b3b82;
+                color: var(--btn-hover-color);
               }
             }
             &:nth-child(2) {
               transition: all 0.1s linear;
               &:hover {
-                color: #932818;
+                color: var(--hover-logout-color);
               }
             }
           }
@@ -340,7 +364,7 @@ header {
         /* align-items: center; */
         /* justify-content: center; */
         font-size: 10em;
-        color: aliceblue;
+        color: var(--hero-heading-color);
         font-family: kaushan script;
         /* width: 39%;
         height: 88%; */
@@ -357,7 +381,7 @@ header {
         /* position: relative;
         left: 28%;
         top: 32%; */
-        color: aliceblue;
+        color: var(--text-color);
     }
     
     /* & .button {
@@ -374,6 +398,13 @@ header {
         font-weight: 600;
         border-radius: 8rem;
         border: none;
+        background-color: var(--btn-color);
+        color: var(--text-color);
+        transition: all 0.1s linear;
+        
+        &:hover {
+          background-color: var(--btn-hover-color);
+        }
     } 
 }
 }
@@ -393,7 +424,7 @@ header {
   & .page{
       height:21%;
       width: 100%;
-      background-color: rgb(0, 0, 0);
+      background-color: var(--bg-color);
       padding-top: 10rem;
       
       & .loop{
@@ -405,7 +436,7 @@ header {
           white-space: nowrap;
           
           & h1{
-              color: #ffffff;
+              color: var(--text-color);
               font-weight: 400;
               font-size: 15rem;
               animation: anim 15s linear infinite;
@@ -501,13 +532,13 @@ header {
       & .card2{
          height: 50rem;
          width: 45rem;
-         background-color: rgb(255, 255, 255);
+         background-color: var(--text-color);
          border-radius: 5rem;
          /* display: flex; */
          justify-content: center;
          align-items: start;
          & .cd{
-             background-color: #000000;
+             background-color: var(--bg-color);
              height: 50rem;
              width: 42rem;
              border-radius: 5rem;
@@ -531,12 +562,12 @@ header {
       .card3{
          height: 50rem;
          width: 45rem;
-         background-color: rgb(255, 255, 255);
+         background-color: var(--text-color);
          border-radius: 5rem;
          /* display: flex; */
          justify-content: center;
          & .cd{
-             background-color: #000000;
+             background-color: var(--bg-color);
              height: 50rem;
              width: 42rem;
              border-radius: 5rem;
@@ -595,7 +626,7 @@ header {
            flex-direction: column; */
            
            text-align: center;
-           color: #000000;
+           color: var(--bg-color);
            font-size: 2rem;
            font-family: "kanit";
            padding-top: 2rem;
@@ -733,262 +764,17 @@ header {
 
 
 /* footer section start here */
-/*footer {
-  background-color: #000000;
-  margin-top: 17rem;
-  position: relative;
-
-  & .section-footer .footer-all--content {
-      & .start-now--section {
-        flex-direction: column;
-        background-color: #555454;
-        border-radius: 2rem;
-        padding: 2rem 5rem 1rem;
-        align-items: center;
-        justify-content: center;
-        gap: 1.3rem;
-        width: auto;
-        background: linear-gradient(to right, #85a3ff, #ffb8b8, #5959ff);
-        
-        & h3 {
-          /* color: black; */
-         /* font-weight: 700;
-        }
-        & .start-now--btn {
-          padding: 0.8rem 1.7rem;
-          border-radius: 1rem;
-          border: none;
-          background-color: #5757f3;
-          color: white;
-          font-weight: 700;
-          cursor: pointer;
-          font-size: 1.5rem;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        }
-      }
-
-      & .actual-footer--section {
-        padding-top: 3rem;
-        gap: 16rem;
-        grid-template-columns: 0.5fr 1fr;
-        place-items: end;
-        & .logo-and--image{
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 3rem;
-          
-          & .nav-logo {
-            cursor: pointer;
-            font-weight: 400;
-            color: aliceblue;
-            & span {
-                font-family: "Karantina", system-ui;
-                font-weight: 400;
-                font-size: 4rem;
-            }
-            & .for {
-                font-family: "Kaushan Script", cursive;
-            }
-          }
-          & img {
-            background-size: cover;
-            width: 100%;
-          }
-        }
-
-        & .head-links {
-          flex-direction: column;
-          align-items: start;
-          justify-content: center;
-          gap: 5rem;
-
-          & .footer-topics--section {
-            gap: 6rem;
-            & p{
-              width: 12rem;
-              font-size: 2.3rem;
-            }
-            & .footer-topics--content {
-              flex-wrap: wrap;
-              gap: 2rem;
-              width: 100%;
-              & li {
-                text-transform: capitalize;
-                list-style-type: none;
-                font-size: 1.4rem;
-                cursor: pointer;
-                color: #6f7785;
-                transition: all 0.2s linear;
-
-                &:hover {
-                  color: #dedede;
-                }
-              }
-            }
-          }
-          & .footer-notes--section {
-            gap: 6rem;
-            align-items: center;
-            & .head-links--para{
-              width: 10rem;
-              font-size: 2.3rem;
-            }
-            & .notes-link {
-              font-size: 1.4rem;
-              width: auto;
-              cursor: pointer;
-              color: #6f7785;
-              transition: all 0.2s linear;
-
-              &:hover {
-                color: #dedede;
-              }
-            }
-          }
-          & .social-links--container {
-            gap: 6rem;
-            align-items: center;
-            & .head-links--para {
-              width: 10rem;
-              font-size: 2.3rem;
-
-            }
-            & .footer-links {
-              font-size: 1.4rem;
-              color: #6f7785;
-              transition: all 0.2s linear;
-              color: white;
-              gap: 2rem;
-              align-items: center;
-              justify-content: center;
-              /* & figure {
-                width: 5rem;
-                aspect-ratio: 1;
-                border-radius: 50%;
-                background-color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              } */
-            /*  & .linkedin {
-                cursor: pointer;
-                width: 6rem;
-                height: 5rem;
-                border-radius: 50%;
-                /* padding: 1rem; */
-            /*  }
-              & .twitter {
-                cursor: pointer;
-                width: 6rem;
-                height: 3rem;
-                /* aspect-ratio: 1; */
-               /* background-color: transparent;
-                border-radius: 50%;
-                /* padding: 1rem; */
-             /* }
-            }
-          }
-        }
-      }
-  }
-}*/
-
-/* footer {
-  background-color: #5272ef;
-  
-  margin-top: 17rem;
-  position: relative;
-  & .container{
- 
-  width: 100%;
-  & .start-now{
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    
-    & .nav-logo {
-      cursor: pointer;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        & span {
-          font-family: "Karantina", system-ui;
-          font-weight: 400;
-          font-size: 4rem;
-        }
-        & .for {
-          font-family: "Kaushan Script", cursive;
-          font-weight: 400;
-        }
-      }
-      & h3{
-        font-size: 2.5rem;
-        text-align: center;
-        font-weight: 700;
-        color: #ffffff;
-
-      }
-      & .topics{
-          padding: 1rem;
-          text-align: center;
-          & h2{
-            font-weight: 600;
-          }
-          & a{
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 500;
-            color: #ffffff;
-          }
-          & .content{
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.5rem;
-            padding: 2rem;
-            color: #ffffff;
-
-          }
-       }
-       & .logo {
-         
-         padding-top:2rem ;
-         display: flex;
-         gap: 1rem;
-         align-items: center;
-         justify-content: center;
-         
-         & h2{
-           text-align: center;
-           padding: 1rem;
-       }
-      
-    }
-    & .copyrights{
-      text-align: center;
-      padding: 2rem;
-      color: #000000;
-      font-size: 1.5rem;
-   }
-  }
-}
-} */
-/* footer section end here */
-
-
 
 footer .footer-logo--para , .quick-links, .useful-notes , .contact-us {
   flex-direction: column;
 }
 
 footer .section-footer {
-  background-color: #202329;
+  background-color: var(--footer-bg-color);
   padding-bottom: 1rem;
   & .copyright {
     text-align: center;
-    color: #84909D;
+    color: var(--footer-copyright-color);
     font-size: 1.7rem;
     font-weight: 700;
   }
@@ -1022,13 +808,13 @@ footer .section-footer {
       }
       
       & li {
-        color: #B1BDC8;
+        color: var(--footer-link-color);
         font-size: 1.5rem;
         cursor: pointer;
         transition: all 0.2s linear;
         
         &:hover {
-          color: #9d9dd1;
+          color: var(--footer-hover-color);
         }
       }
       
@@ -1036,7 +822,7 @@ footer .section-footer {
     
     & .contact-us {
       & .gmail {
-        color: #B1BDC8;
+        color: var(--footer-link-color);
         cursor: pointer;
       }
     }
