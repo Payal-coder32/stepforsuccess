@@ -33,98 +33,103 @@
 
     <link rel="stylesheet" href="../CSS file/index.css">
     <link rel="stylesheet" href="../CSS file/articls.css">
+    <link rel="stylesheet" href="../CSS file/responsive.css">
     
   </head>
   <body>
     <!---------navbar two start--------->
     <header>
-      <section class="container nav-container flex">
-        <!-- <p class="nav-logo">
-          <span>Step</span><span class="for">For</span><span>Success</span>
-        </p> -->
-        <a href="/Html Files/index.html">
-          <img src="../Images+Icons/Navbar Logo.svg" alt="" class="nav-logo">
-        </a>
+      <div class="nav-container">
 
-        <div class="navbar-search">
-          <input type="text" class="nav-input" placeholder="Search anything" />
-          <button class="nav-botton">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
+      
+        <section class=" container flex">
+          <!-- <p class="nav-logo">
+            <span>Step</span><span class="for">For</span><span>Success</span>
+          </p> -->
+          <a href="/Html Files/index.html">
+            <img src="../Images+Icons/Navbar Logo.svg" alt="" class="nav-logo">
+          </a>
 
-        <ul class="navbar-list flex">
-          
-          <li class="drop-one flex"><a class="navbar-link" href="../Html Files/index.html">Home</a></li>
+          <div class="navbar-search">
+            <input type="text" class="nav-input" placeholder="Search anything" />
+            <button class="nav-botton">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
 
-
-
-          <li class="drop-one topics-section">
-            <div class="topics-btn flex">
-              <a class="navbar-link" href="#">Topics</a>
-              <button>
-                <img src="../Images+Icons/dropdown.svg" alt="" class="nav-dropdown" />
-              </button>
-            </div>
-            <div class="topics-content">
-              <ul class="topics-list flex">
-                <li><a href="" class="DSA-topic--heading">Array</a></li>
-                <li><a href="" class="DSA-topic--heading">String</a></li>
-                <li><a href="" class="DSA-topic--heading">Linked list</a></li>
-                <li><a href="" class="DSA-topic--heading">Stack</a></li>
-                <li><a href="" class="DSA-topic--heading">Queue</a></li>
-                <li><a href="" class="DSA-topic--heading">recursion</a></li>
-                <li><a href="" class="DSA-topic--heading">searching</a></li>
-                <li><a href="" class="DSA-topic--heading">sorting</a></li>
-                <li><a href="" class="DSA-topic--heading">heap</a></li>
-                <li><a href="" class="DSA-topic--heading">graph</a></li>
-                <li><a href="" class="DSA-topic--heading">backtracking</a></li>
-                <li>
-                  <a href="" class="DSA-topic--heading">greedy algorithm</a>
-                </li>
-                <li><a href="" class="DSA-topic--heading">trie</a></li>
-                <li><a href="" class="DSA-topic--heading">STL</a></li>
-                <li>
-                  <a href="" class="DSA-topic--heading">dynamic programming</a>
-                </li>
-                <li>
-                  <a href="" class="DSA-topic--heading">bit manipulation</a>
-                </li>
-              </ul>
-            </div>
-          </li>
+          <ul class="navbar-list flex">
+            
+            <li class="drop-one flex"><a class="navbar-link" href="../Html Files/index.html">Home</a></li>
 
 
 
-          <li class="drop-one flex" i>
-            <a class="navbar-link" href="../Html Files/articls.html">Articles</a>
-          </li>
-
-          <li class="drop-one flex login" i>
-            <a class="navbar-link flex" href="#">Login</a>
-          </li>
-          
-          <li class="drop-one flex user-profile" i>
-            <figure class="profile">
-              <img src="../Images+Icons/user.svg" alt="" class="navbar-link flex">
-              <!-- <img src="../Images+Icons/dropdown.svg" alt=""> -->
-              
-              <div class="profile-section flex">
-                <div class="user flex">
-                  <i class="fa-solid fa-user"></i>
-                  <p class="view-profile">View Profile</p>
-                </div>
-                <div class="user flex">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-                  <p class="view-profile">Logout</p>
-                </div>
-                
+            <li class="drop-one topics-section">
+              <div class="topics-btn flex">
+                <a class="navbar-link" href="#">Topics</a>
+                <button>
+                  <img src="../Images+Icons/dropdown.svg" alt="" class="nav-dropdown" />
+                </button>
               </div>
-            </figure>
-          </li>
-        
-        </ul>
-      </section>
+              <div class="topics-content">
+                <ul class="topics-list flex">
+                  <li><a href="" class="DSA-topic--heading">Array</a></li>
+                  <li><a href="" class="DSA-topic--heading">String</a></li>
+                  <li><a href="" class="DSA-topic--heading">Linked list</a></li>
+                  <li><a href="" class="DSA-topic--heading">Stack</a></li>
+                  <li><a href="" class="DSA-topic--heading">Queue</a></li>
+                  <li><a href="" class="DSA-topic--heading">recursion</a></li>
+                  <li><a href="" class="DSA-topic--heading">searching</a></li>
+                  <li><a href="" class="DSA-topic--heading">sorting</a></li>
+                  <li><a href="" class="DSA-topic--heading">heap</a></li>
+                  <li><a href="" class="DSA-topic--heading">graph</a></li>
+                  <li><a href="" class="DSA-topic--heading">backtracking</a></li>
+                  <li>
+                    <a href="" class="DSA-topic--heading">greedy algorithm</a>
+                  </li>
+                  <li><a href="" class="DSA-topic--heading">trie</a></li>
+                  <li><a href="" class="DSA-topic--heading">STL</a></li>
+                  <li>
+                    <a href="" class="DSA-topic--heading">dynamic programming</a>
+                  </li>
+                  <li>
+                    <a href="" class="DSA-topic--heading">bit manipulation</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+
+
+            <li class="drop-one flex" i>
+              <a class="navbar-link" href="../Html Files/articls.html">Articles</a>
+            </li>
+
+            <li class="drop-one flex login" i>
+              <a class="navbar-link flex" href="#">Login</a>
+            </li>
+            
+            <li class="drop-one flex user-profile" i>
+              <figure class="profile">
+                <img src="../Images+Icons/user.svg" alt="" class="navbar-link flex">
+                <!-- <img src="../Images+Icons/dropdown.svg" alt=""> -->
+                
+                <div class="profile-section flex">
+                  <div class="user flex">
+                    <i class="fa-solid fa-user"></i>
+                    <p class="view-profile">View Profile</p>
+                  </div>
+                  <div class="user flex">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    <p class="view-profile">Logout</p>
+                  </div>
+                  
+                </div>
+              </figure>
+            </li>
+          
+          </ul>
+        </section>
+      </div>
     </header>
     <!-----navbar two end------->
 
@@ -140,7 +145,10 @@
 
         <button class="flex">Read more</button>
       </div>
-      <img src="../Images+Icons/coding1-3d-animation.png" alt="" />
+      
+      <figure class="flex">
+        <img src="../Images+Icons/coding1-3d-animation.png" alt="" />
+      </figure>
     </section>
     <!------------main section end----->
 
@@ -263,7 +271,7 @@
     <!-- footer section start here -->
 
     <footer>
-      <section class="section-footer">
+      <section class="section-footer ">
 
         <div class="section-footer--part container grid grid-four--cols">
           <div class="leftpart flex">
@@ -336,7 +344,8 @@
             </div>
           </ul>
         </div>
-        <p class="copyright">Copyrights &copy; All rights are reserved by stepforsuccess</p>
+
+        <p class="copyright container">Copyrights &copy; All rights are reserved by stepforsuccess</p>
       </section>
     </footer>
 
